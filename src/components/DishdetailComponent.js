@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
                             return(
                                 <li>
                                     <p>{Dcomment.comment}</p>
-                                    <p>{Dcomment.author},{" "}
+                                    <p>--{Dcomment.author},{" "}
                                         {new Intl.DateTimeFormat("en-US",{
                                             year: "numeric",
                                             month: "short",

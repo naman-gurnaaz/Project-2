@@ -1,7 +1,9 @@
 import React from 'react';
-import { Card, CardImg, Breadcrumb, BreadcrumbItem, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, Breadcrumb, BreadcrumbItem, CardText, CardBody, CardTitle, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
-     
+import CommentForm from './CommentForm'
+    
+        
     function RenderComments({comments}) {
         if (comments != null){
             return(
@@ -24,7 +26,6 @@ import { Link } from 'react-router-dom';
                             );
                         })}
                     </ul>
-
                 </div>
             );
         }
@@ -61,6 +62,9 @@ import { Link } from 'react-router-dom';
                         </div>
                         <div className="col-12 col-md-5 m-1">
                             <RenderComments comments = {props.comments} />
+                        </div>
+                        <div>
+                            <CommentForm />
                         </div>
                     </div>
                 </div>
